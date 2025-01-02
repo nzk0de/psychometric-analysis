@@ -1,0 +1,12 @@
+eyelinkio
+matplotlib
+numpy
+pandas
+scikit_posthocs
+scipy
+seaborn
+statsmodels
+tabulate
+tqdm
+openpyxl
+statsmodels

@@ -1,0 +1,251 @@
+############################################# Statistics 0.1 #############################################
+Thetikoi Statistics
+Overall Mean RT: 4.266 seconds
+Overall Mean Accuracy: 0.989%
+
+Min Session Mean Accuracy: 0.935%
+Max Session Mean Accuracy: 1.000%
+Theoritikoi Statistics
+Overall Mean RT: 7.695 seconds
+Overall Mean Accuracy: 0.848%
+
+Min Session Mean Accuracy: 0.613%
+Max Session Mean Accuracy: 1.000%
+
+
+############################################# Decimals #############################################
+
+Global Statistics (using median method):
+Valid range: (3122.00, 25282.20)
+
+
+############################################# Anova Test 1.2.2 #############################################
+item_type
+Type_B    46
+Type_A    45
+Type_C    45
+Type_D    37
+Name: count, dtype: int64
+
+Performing Kruskal-Wallis test for 'accuracy' across 'item_type' groups:
+Kruskal-Wallis H-statistic: 7.2673, p-value: 0.0639
+Result: No significant differences detected. Skipping post-hoc testing.
+
+Performing Kruskal-Wallis test for 'reaction_time' across 'item_type' groups:
+Kruskal-Wallis H-statistic: 2.3802, p-value: 0.4973
+Result: No significant differences detected. Skipping post-hoc testing.
+
+Participant Statistics:
+==========================================================================================
+Participant  | Total Trials | Valid Trials |   Valid %    |  Median RT   |    MAD RT   
+------------------------------------------------------------------------------------------
+    P011     |      10      |      10      |    100.00    |   5151.00    |   3953.00   
+    P017     |      13      |      13      |    100.00    |   7141.00    |   9817.00   
+    P016     |      10      |      10      |    100.00    |   12119.50   |   15481.40  
+    P002     |      9       |      9       |    100.00    |   9151.00    |   3390.00   
+    P010     |      8       |      4       |    50.00     |   7279.50    |   5054.85   
+    P009     |      13      |      12      |    92.31     |   9547.00    |   11461.45  
+    P003     |      12      |      12      |    100.00    |   10931.00   |   13591.75  
+    P001     |      11      |      9       |    81.82     |   3716.00    |   1826.80   
+    P012     |      12      |      6       |    50.00     |   15337.50   |   17377.25  
+    P013     |      8       |      7       |    87.50     |   5807.00    |   4858.10   
+    P008     |      10      |      10      |    100.00    |   13563.00   |   11098.30  
+    P005     |      12      |      10      |    83.33     |   16948.50   |   17212.20  
+    P018     |      6       |      6       |    100.00    |   6026.50    |   4513.00   
+    P014     |      10      |      10      |    100.00    |   5116.50    |   2995.30   
+    P007     |      9       |      7       |    77.78     |   11994.00   |   14550.60  
+    P006     |      11      |      9       |    81.82     |   6429.00    |   13074.80  
+    P015     |      5       |      5       |    100.00    |   5098.00    |   14574.60  
+    P004     |      9       |      9       |    100.00    |   11977.00   |   11311.80  
+    P019     |      15      |      15      |    100.00    |   11694.00   |   10886.30  
+Plot saved to results/exp2_demo/Decimal_outlier_median.png
+
+
+############################################# Statistics Accuracy 1.3.1 #############################################
+                                         Comparison  Odds Ratio  p-value  \
+0               C(item_type)[T.Type_B] vs Intercept       0.039    0.017   
+1               C(item_type)[T.Type_C] vs Intercept       0.023    0.008   
+2               C(item_type)[T.Type_D] vs Intercept       0.022    0.003   
+3  C(item_type)[T.Type_C] vs C(item_type)[T.Type_B]       0.599    0.396   
+4  C(item_type)[T.Type_D] vs C(item_type)[T.Type_B]       0.575    0.187   
+5  C(item_type)[T.Type_D] vs C(item_type)[T.Type_C]       0.960    0.948   
+
+                                        95% CI  Adjusted p-value  
+0    (0.00274290918943982, 0.5582278995473803)             0.101  
+1  (0.0014388953244790588, 0.3814947704980166)             0.050  
+2  (0.0018894822489731909, 0.2678693647940122)             0.016  
+3     (0.18332411290010595, 1.955578395234569)             1.000  
+4      (0.252803775491483, 1.3075531182624125)             1.000  
+5    (0.28586776770837147, 3.2253948134155315)             1.000  
+
+
+############################################# Statistics Reaction Time 1.3.2 #############################################
+                                         Comparison  Odds Ratio  p-value  \
+0               C(item_type)[T.Type_B] vs Intercept       0.361    0.000   
+1               C(item_type)[T.Type_C] vs Intercept       0.329    0.000   
+2               C(item_type)[T.Type_D] vs Intercept       0.326    0.000   
+3  C(item_type)[T.Type_C] vs C(item_type)[T.Type_B]       0.911    0.405   
+4  C(item_type)[T.Type_D] vs C(item_type)[T.Type_B]       0.903    0.208   
+5  C(item_type)[T.Type_D] vs C(item_type)[T.Type_C]       0.992    0.948   
+
+                                       95% CI  Adjusted p-value  
+0  (0.28010182061806893, 0.46619713612408287)               0.0  
+1   (0.24150752927329264, 0.4487148849892187)               0.0  
+2   (0.25117165152930754, 0.4242551074820518)               0.0  
+3    (0.7314988038746847, 1.1344934635990536)               1.0  
+4    (0.7712008155050768, 1.0581437898882444)               1.0  
+5    (0.7715262291526207, 1.2745176500361084)               1.0  
+
+Summary Table:
++----+-------------+--------+-------+
+|    | Item Type   |   Mean |   SEM |
++====+=============+========+=======+
+|  0 | Type_A      |  0.911 | 0.043 |
++----+-------------+--------+-------+
+|  1 | Type_B      |  0.804 | 0.059 |
++----+-------------+--------+-------+
+|  2 | Type_C      |  0.711 | 0.068 |
++----+-------------+--------+-------+
+|  3 | Type_D      |  0.703 | 0.076 |
++----+-------------+--------+-------+
+Plot saved to results/exp2_demo/Decimal_comparison_accuracy.png
+
+Summary Table:
++----+-------------+----------+---------+
+|    | Item Type   |     Mean |     SEM |
++====+=============+==========+=========+
+|  0 | Type_A      |  9937.98 | 758.657 |
++----+-------------+----------+---------+
+|  1 | Type_B      | 10095.2  | 743.164 |
++----+-------------+----------+---------+
+|  2 | Type_C      |  9040.8  | 843.914 |
++----+-------------+----------+---------+
+|  3 | Type_D      | 10258.2  | 974.921 |
++----+-------------+----------+---------+
+Plot saved to results/exp2_demo/Decimal_comparison_reaction_time_mean.png
+
+
+############################################# Smalls #############################################
+
+Global Statistics (using median method):
+Valid range: (2526.40, 22286.75)
+
+
+############################################# Anova Test 1.2.2 #############################################
+item_type
+Type_A    48
+Type_C    45
+Type_B    41
+Type_D    38
+Name: count, dtype: int64
+
+Performing Kruskal-Wallis test for 'accuracy' across 'item_type' groups:
+Kruskal-Wallis H-statistic: 15.5120, p-value: 0.0014
+Result: Significant differences detected.
+
+Performing post-hoc pairwise comparisons using Dunn's test with Bonferroni correction:
+          Type_A    Type_B    Type_C    Type_D
+Type_A  1.000000  1.000000  0.004820  0.029331
+Type_B  1.000000  1.000000  0.067382  0.238549
+Type_C  0.004820  0.067382  1.000000  1.000000
+Type_D  0.029331  0.238549  1.000000  1.000000
+
+Performing Kruskal-Wallis test for 'reaction_time' across 'item_type' groups:
+Kruskal-Wallis H-statistic: 11.9329, p-value: 0.0076
+Result: Significant differences detected.
+
+Performing post-hoc pairwise comparisons using Dunn's test with Bonferroni correction:
+          Type_A    Type_B    Type_C    Type_D
+Type_A  1.000000  0.715127  0.010291  0.041883
+Type_B  0.715127  1.000000  0.835213  1.000000
+Type_C  0.010291  0.835213  1.000000  1.000000
+Type_D  0.041883  1.000000  1.000000  1.000000
+
+Participant Statistics:
+==========================================================================================
+Participant  | Total Trials | Valid Trials |   Valid %    |  Median RT   |    MAD RT   
+------------------------------------------------------------------------------------------
+    P011     |      9       |      8       |    88.89     |   4869.00    |   2635.20   
+    P017     |      6       |      6       |    100.00    |   5613.00    |   10401.25  
+    P016     |      12      |      11      |    91.67     |   11511.00   |   10516.00  
+    P002     |      12      |      12      |    100.00    |   8424.50    |   4909.10   
+    P010     |      10      |      9       |    90.00     |   7968.00    |   13522.00  
+    P009     |      10      |      5       |    50.00     |   4987.00    |   6382.60   
+    P003     |      12      |      12      |    100.00    |   13590.00   |   12277.00  
+    P001     |      10      |      9       |    90.00     |   3019.00    |   2353.40   
+    P012     |      7       |      5       |    71.43     |   8167.00    |   10866.80  
+    P013     |      15      |      14      |    93.33     |   9784.50    |   11673.30  
+    P008     |      13      |      12      |    92.31     |   11263.50   |   14510.70  
+    P005     |      9       |      7       |    77.78     |   11118.00   |   11768.00  
+    P018     |      12      |      10      |    83.33     |   6367.50    |   5055.45   
+    P014     |      9       |      9       |    100.00    |   6332.00    |   7901.00   
+    P007     |      10      |      8       |    80.00     |   10546.00   |   15031.60  
+    P006     |      10      |      10      |    100.00    |   4557.50    |   10825.20  
+    P015     |      8       |      8       |    100.00    |   7466.50    |   8943.90   
+    P004     |      6       |      6       |    100.00    |   6218.50    |   3995.75   
+    P019     |      12      |      11      |    91.67     |   12425.00   |   13138.00  
+Plot saved to results/exp2_demo/Small_outlier_median.png
+
+
+############################################# Statistics Accuracy 1.3.1 #############################################
+                                         Comparison  Odds Ratio  p-value  \
+0               C(item_type)[T.Type_B] vs Intercept       0.006    0.020   
+1               C(item_type)[T.Type_C] vs Intercept       0.001    0.001   
+2               C(item_type)[T.Type_D] vs Intercept       0.001    0.000   
+3  C(item_type)[T.Type_C] vs C(item_type)[T.Type_B]       0.217    0.038   
+4  C(item_type)[T.Type_D] vs C(item_type)[T.Type_B]       0.254    0.088   
+5  C(item_type)[T.Type_D] vs C(item_type)[T.Type_C]       1.172    0.700   
+
+                                          95% CI  Adjusted p-value  
+0   (7.474025770381545e-05, 0.43992501862181826)             0.119  
+1  (2.7547825167494212e-05, 0.05625830430455638)             0.003  
+2  (5.0245101697135506e-05, 0.04234730877624691)             0.001  
+3      (0.05121700326986252, 0.9202938922940467)             0.229  
+4      (0.05274802413996333, 1.2268178799009135)             0.529  
+5        (0.5226955764030501, 2.626617083589452)             1.000  
+
+
+############################################# Statistics Reaction Time 1.3.2 #############################################
+                                         Comparison  Odds Ratio  p-value  \
+0               C(item_type)[T.Type_B] vs Intercept       0.356    0.000   
+1               C(item_type)[T.Type_C] vs Intercept       0.294    0.000   
+2               C(item_type)[T.Type_D] vs Intercept       0.303    0.000   
+3  C(item_type)[T.Type_C] vs C(item_type)[T.Type_B]       0.824    0.011   
+4  C(item_type)[T.Type_D] vs C(item_type)[T.Type_B]       0.849    0.083   
+5  C(item_type)[T.Type_D] vs C(item_type)[T.Type_C]       1.030    0.693   
+
+                                      95% CI  Adjusted p-value  
+0   (0.3122754719636908, 0.4069200409909238)             0.000  
+1  (0.25632561292152717, 0.3366561207669437)             0.000  
+2   (0.264256553147447, 0.34662352800745533)             0.000  
+3   (0.7105558228293404, 0.9557259179311467)             0.063  
+4    (0.705716540618748, 1.0214251679214252)             0.496  
+5   (0.8886459066064587, 1.1944735577843961)             1.000  
+
+Summary Table:
++----+-------------+--------+-------+
+|    | Item Type   |   Mean |   SEM |
++====+=============+========+=======+
+|  0 | Type_A      |  0.979 | 0.021 |
++----+-------------+--------+-------+
+|  1 | Type_B      |  0.927 | 0.041 |
++----+-------------+--------+-------+
+|  2 | Type_C      |  0.733 | 0.067 |
++----+-------------+--------+-------+
+|  3 | Type_D      |  0.763 | 0.07  |
++----+-------------+--------+-------+
+Plot saved to results/exp2_demo/Small_comparison_accuracy.png
+
+Summary Table:
++----+-------------+----------+---------+
+|    | Item Type   |     Mean |     SEM |
++====+=============+==========+=========+
+|  0 | Type_A      |  6872.5  | 465.859 |
++----+-------------+----------+---------+
+|  1 | Type_B      |  8803.51 | 808.561 |
++----+-------------+----------+---------+
+|  2 | Type_C      | 10082.4  | 734.494 |
++----+-------------+----------+---------+
+|  3 | Type_D      |  9981.13 | 897.165 |
++----+-------------+----------+---------+
+Plot saved to results/exp2_demo/Small_comparison_reaction_time_mean.png

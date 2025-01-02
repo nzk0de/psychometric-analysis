@@ -1,0 +1,11 @@
+data/*
+*.zip
+
+*.ipynb
+
+*.xlsx
+*.csv
+__pycache__/
+.png
+dev/*
+venv/

@@ -1,0 +1,606 @@
+
+
+############################################# Theoritikoi #############################################
+category
+Unknown       0.320183
+equation      0.306686
+b             0.155316
+c             0.086379
+a             0.076412
+solvable      0.034884
+unsolvable    0.020141
+Name: count, dtype: float64
+category
+equation      0.451130
+b             0.228467
+c             0.127062
+a             0.112401
+solvable      0.051313
+unsolvable    0.029627
+Name: count, dtype: float64
+category
+equation    0.490861
+b           0.248588
+c           0.138252
+a           0.122300
+Name: count, dtype: float64
+category
+b    0.488251
+c    0.271540
+a    0.240209
+Name: count, dtype: float64
+
+
+############################################# Thetikoi #############################################
+category
+equation      0.416058
+b             0.186861
+Unknown       0.183942
+c             0.094161
+a             0.056204
+solvable      0.037226
+unsolvable    0.025547
+Name: count, dtype: float64
+category
+equation      0.509839
+b             0.228980
+c             0.115385
+a             0.068873
+solvable      0.045617
+unsolvable    0.031306
+Name: count, dtype: float64
+category
+equation    0.552326
+b           0.248062
+c           0.125000
+a           0.074612
+Name: count, dtype: float64
+category
+b    0.554113
+c    0.279221
+a    0.166667
+Name: count, dtype: float64
+
+
+############################################# Theoritikoi - Decimal #############################################
+Count of each participant_id:
+  participant_id  count
+0           P006    496
+1           P001    448
+2           P003    437
+3           P007    306
+4           P002    189
+5           P005    181
+6           P004    131
+
+Count of each participant_id, condition pair:
+   participant_id item_type  count
+0            P001    Type_A    111
+1            P001    Type_B     99
+2            P001    Type_C    149
+3            P001    Type_D     89
+4            P002    Type_A     62
+5            P002    Type_B     68
+6            P002    Type_C      5
+7            P002    Type_D     54
+8            P003    Type_A    184
+9            P003    Type_B     83
+10           P003    Type_C     20
+11           P003    Type_D    150
+12           P004    Type_A     51
+13           P004    Type_B     32
+14           P004    Type_C     22
+15           P004    Type_D     26
+16           P005    Type_A     29
+17           P005    Type_B     54
+18           P005    Type_C     19
+19           P005    Type_D     79
+20           P006    Type_A     85
+21           P006    Type_B     90
+22           P006    Type_C    166
+23           P006    Type_D    155
+24           P007    Type_A     80
+25           P007    Type_B     97
+26           P007    Type_C     94
+27           P007    Type_D     35
+Mean count of occurrences per participant_id:
+312.57142857142856
+Mean count of occurrences per condition:
+item_type
+Type_A    86.000000
+Type_B    74.714286
+Type_C    67.857143
+Type_D    84.000000
+Name: count, dtype: float64
+Mean count of occurrences per condition category participant pair
+   item_type category  mean_count
+0     Type_A        a    5.857143
+1     Type_A        b   12.000000
+2     Type_A        c    8.285714
+3     Type_B        a    7.428571
+4     Type_B        b    8.571429
+5     Type_B        c    7.571429
+6     Type_C        a   10.000000
+7     Type_C        b   11.666667
+8     Type_C        c    7.200000
+9     Type_D        a    5.714286
+10    Type_D        b   16.000000
+11    Type_D        c   10.500000
+######################## ANOVA Test for item_type-category pairs ########################
+N-Way ANOVA Results for counts with item_type, category:
+                         sum_sq     df         F    PR(>F)
+item_type             56.650366    3.0  2.233042  0.086121
+category             118.313321    2.0  6.995504  0.001198
+item_type:category    37.815653    6.0  0.745308  0.613910
+Residual            1462.954239  173.0       NaN       NaN
+
+Performing LSD post-hoc testing...
+
+LSD Pairwise Comparisons:
+     Group 1   Group 2  Mean Difference       LSD  Significant
+0   Type_A-a  Type_A-b        -1.922222  1.864789         True
+1   Type_A-a  Type_A-c        -0.484127  1.843638        False
+2   Type_A-a  Type_B-a        -0.972222  1.972116        False
+3   Type_A-a  Type_B-b        -1.722222  2.006616        False
+4   Type_A-a  Type_B-c        -1.034722  1.972116        False
+5   Type_A-a  Type_C-a        -1.722222  2.263768        False
+6   Type_A-a  Type_C-b        -2.722222  2.045332         True
+7   Type_A-a  Type_C-c        -0.994949  2.196623        False
+8   Type_A-a  Type_D-a        -0.579365  2.045332        False
+9   Type_A-a  Type_D-b        -4.122222  2.006616         True
+10  Type_A-a  Type_D-c        -1.922222  2.006616        False
+11  Type_A-b  Type_A-c         1.438095  1.793314        False
+12  Type_A-b  Type_B-a         0.950000  1.925154        False
+13  Type_A-b  Type_B-b         0.200000  1.960481        False
+14  Type_A-b  Type_B-c         0.887500  1.925154        False
+15  Type_A-b  Type_C-a         0.200000  2.222976        False
+16  Type_A-b  Type_C-b        -0.800000  2.000090        False
+17  Type_A-b  Type_C-c         0.927273  2.154560        False
+18  Type_A-b  Type_D-a         1.342857  2.000090        False
+19  Type_A-b  Type_D-b        -2.200000  1.960481         True
+20  Type_A-b  Type_D-c         0.000000  1.960481        False
+21  Type_A-c  Type_B-a        -0.488095  1.904673        False
+22  Type_A-c  Type_B-b        -1.238095  1.940373        False
+23  Type_A-c  Type_B-c        -0.550595  1.904673        False
+24  Type_A-c  Type_C-a        -1.238095  2.205263        False
+25  Type_A-c  Type_C-b        -2.238095  1.980384         True
+26  Type_A-c  Type_C-c        -0.510823  2.136280        False
+27  Type_A-c  Type_D-a        -0.095238  1.980384        False
+28  Type_A-c  Type_D-b        -3.638095  1.940373         True
+29  Type_A-c  Type_D-c        -1.438095  1.940373        False
+30  Type_B-a  Type_B-b        -0.750000  2.062834        False
+31  Type_B-a  Type_B-c        -0.062500  2.029290        False
+32  Type_B-a  Type_C-a        -0.750000  2.313747        False
+33  Type_B-a  Type_C-b        -1.750000  2.100515        False
+34  Type_B-a  Type_C-c        -0.022727  2.248095        False
+35  Type_B-a  Type_D-a         0.392857  2.100515        False
+36  Type_B-a  Type_D-b        -3.150000  2.062834         True
+37  Type_B-a  Type_D-c        -0.950000  2.062834        False
+38  Type_B-b  Type_B-c         0.687500  2.062834        False
+39  Type_B-b  Type_C-a         0.000000  2.343223        False
+40  Type_B-b  Type_C-b        -1.000000  2.132939        False
+41  Type_B-b  Type_C-c         0.727273  2.278420        False
+42  Type_B-b  Type_D-a         1.142857  2.132939        False
+43  Type_B-b  Type_D-b        -2.400000  2.095842         True
+44  Type_B-b  Type_D-c        -0.200000  2.095842        False
+45  Type_B-c  Type_C-a        -0.687500  2.313747        False
+46  Type_B-c  Type_C-b        -1.687500  2.100515        False
+47  Type_B-c  Type_C-c         0.039773  2.248095        False
+48  Type_B-c  Type_D-a         0.455357  2.100515        False
+49  Type_B-c  Type_D-b        -3.087500  2.062834         True
+50  Type_B-c  Type_D-c        -0.887500  2.062834        False
+51  Type_C-a  Type_C-b        -1.000000  2.376461        False
+52  Type_C-a  Type_C-c         0.727273  2.507855        False
+53  Type_C-a  Type_D-a         1.142857  2.376461        False
+54  Type_C-a  Type_D-b        -2.400000  2.343223         True
+55  Type_C-a  Type_D-c        -0.200000  2.343223        False
+56  Type_C-b  Type_C-c         1.727273  2.312591        False
+57  Type_C-b  Type_D-a         2.142857  2.169403        False
+58  Type_C-b  Type_D-b        -1.400000  2.132939        False
+59  Type_C-b  Type_D-c         0.800000  2.132939        False
+60  Type_C-c  Type_D-a         0.415584  2.312591        False
+61  Type_C-c  Type_D-b        -3.127273  2.278420         True
+62  Type_C-c  Type_D-c        -0.927273  2.278420        False
+63  Type_D-a  Type_D-b        -3.542857  2.132939         True
+64  Type_D-a  Type_D-c        -1.342857  2.132939        False
+65  Type_D-b  Type_D-c         2.200000  2.095842         True
+######################## ANOVA Test for item_type ########################
+N-Way ANOVA Results for counts with item_type:
+                 sum_sq    df         F    PR(>F)
+item_type    201.204296   3.0  0.198571  0.897102
+Residual   29384.619880  87.0       NaN       NaN
+
+No significant effects found. Skipping LSD post-hoc testing.
+
+
+############################################# Theoritikoi - Small #############################################
+Count of each participant_id:
+  participant_id  count
+0           P006    578
+1           P001    542
+2           P007    501
+3           P003    444
+4           P002    239
+5           P005    188
+6           P004    136
+
+Count of each participant_id, condition pair:
+   participant_id item_type  count
+0            P001    Type_A    274
+1            P001    Type_B     73
+2            P001    Type_C    131
+3            P001    Type_D     64
+4            P002    Type_A     77
+5            P002    Type_B     63
+6            P002    Type_C     44
+7            P002    Type_D     55
+8            P003    Type_A    116
+9            P003    Type_B    105
+10           P003    Type_C     92
+11           P003    Type_D    131
+12           P004    Type_A     39
+13           P004    Type_B     29
+14           P004    Type_C     28
+15           P004    Type_D     40
+16           P005    Type_A     47
+17           P005    Type_B     37
+18           P005    Type_C     52
+19           P005    Type_D     52
+20           P006    Type_A    178
+21           P006    Type_B    125
+22           P006    Type_C    102
+23           P006    Type_D    173
+24           P007    Type_A     97
+25           P007    Type_B    121
+26           P007    Type_C    164
+27           P007    Type_D    119
+Mean count of occurrences per participant_id:
+375.42857142857144
+Mean count of occurrences per condition:
+item_type
+Type_A    118.285714
+Type_B     79.000000
+Type_C     87.571429
+Type_D     90.571429
+Name: count, dtype: float64
+Mean count of occurrences per condition category participant pair
+   item_type category  mean_count
+0     Type_A        a    9.571429
+1     Type_A        b   21.285714
+2     Type_A        c    9.333333
+3     Type_B        a    5.142857
+4     Type_B        b   11.714286
+5     Type_B        c   10.000000
+6     Type_C        a    6.666667
+7     Type_C        b   12.000000
+8     Type_C        c    5.857143
+9     Type_D        a    8.666667
+10    Type_D        b   17.571429
+11    Type_D        c    7.000000
+######################## ANOVA Test for item_type-category pairs ########################
+N-Way ANOVA Results for counts with item_type, category:
+                         sum_sq     df         F    PR(>F)
+item_type             78.623077    3.0  1.567972  0.198369
+category             325.491662    2.0  9.736871  0.000092
+item_type:category    91.939404    6.0  0.916769  0.483842
+Residual            3342.877338  200.0       NaN       NaN
+
+Performing LSD post-hoc testing...
+
+LSD Pairwise Comparisons:
+     Group 1   Group 2  Mean Difference       LSD  Significant
+0   Type_A-a  Type_A-b        -3.923684  2.582675         True
+1   Type_A-a  Type_A-c         0.415205  2.651655        False
+2   Type_A-a  Type_B-a         1.276316  2.735436        False
+3   Type_A-a  Type_B-b        -1.029240  2.651655        False
+4   Type_A-a  Type_B-c        -0.473684  2.784494        False
+5   Type_A-a  Type_C-a         0.669173  2.839523        False
+6   Type_A-a  Type_C-b        -0.673684  2.582675        False
+7   Type_A-a  Type_C-c         1.114551  2.691406        False
+8   Type_A-a  Type_D-a         0.059649  2.784494        False
+9   Type_A-a  Type_D-b        -2.330827  2.552542        False
+10  Type_A-a  Type_D-c         0.947368  2.615577        False
+11  Type_A-b  Type_A-c         4.338889  2.619207         True
+12  Type_A-b  Type_B-a         5.200000  2.703993         True
+13  Type_A-b  Type_B-b         2.894444  2.619207         True
+14  Type_A-b  Type_B-c         3.450000  2.753612         True
+15  Type_A-b  Type_C-a         4.592857  2.809246         True
+16  Type_A-b  Type_C-b         3.250000  2.549349         True
+17  Type_A-b  Type_C-c         5.038235  2.659443         True
+18  Type_A-b  Type_D-a         3.983333  2.753612         True
+19  Type_A-b  Type_D-b         1.592857  2.518817        False
+20  Type_A-b  Type_D-c         4.871053  2.582675         True
+21  Type_A-c  Type_B-a         0.861111  2.769954        False
+22  Type_A-c  Type_B-b        -1.444444  2.687250        False
+23  Type_A-c  Type_B-c        -0.888889  2.818411        False
+24  Type_A-c  Type_C-a         0.253968  2.872791        False
+25  Type_A-c  Type_C-b        -1.088889  2.619207        False
+26  Type_A-c  Type_C-c         0.699346  2.726482        False
+27  Type_A-c  Type_D-a        -0.355556  2.818411        False
+28  Type_A-c  Type_D-b        -2.746032  2.589499         True
+29  Type_A-c  Type_D-c         0.532164  2.651655        False
+30  Type_B-a  Type_B-b        -2.305556  2.769954        False
+31  Type_B-a  Type_B-c        -1.750000  2.897374        False
+32  Type_B-a  Type_C-a        -0.607143  2.950298        False
+33  Type_B-a  Type_C-b        -1.950000  2.703993        False
+34  Type_B-a  Type_C-c        -0.161765  2.808030        False
+35  Type_B-a  Type_D-a        -1.216667  2.897374        False
+36  Type_B-a  Type_D-b        -3.607143  2.675226         True
+37  Type_B-a  Type_D-c        -0.328947  2.735436        False
+38  Type_B-b  Type_B-c         0.555556  2.818411        False
+39  Type_B-b  Type_C-a         1.698413  2.872791        False
+40  Type_B-b  Type_C-b         0.355556  2.619207        False
+41  Type_B-b  Type_C-c         2.143791  2.726482        False
+42  Type_B-b  Type_D-a         1.088889  2.818411        False
+43  Type_B-b  Type_D-b        -1.301587  2.589499        False
+44  Type_B-b  Type_D-c         1.976608  2.651655        False
+45  Type_B-c  Type_C-a         1.142857  2.995840        False
+46  Type_B-c  Type_C-b        -0.200000  2.753612        False
+47  Type_B-c  Type_C-c         1.588235  2.855842        False
+48  Type_B-c  Type_D-a         0.533333  2.943735        False
+49  Type_B-c  Type_D-b        -1.857143  2.725369        False
+50  Type_B-c  Type_D-c         1.421053  2.784494        False
+51  Type_C-a  Type_C-b        -1.342857  2.809246        False
+52  Type_C-a  Type_C-c         0.445378  2.909522        False
+53  Type_C-a  Type_D-a        -0.609524  2.995840        False
+54  Type_C-a  Type_D-b        -3.000000  2.781568         True
+55  Type_C-a  Type_D-c         0.278195  2.839523        False
+56  Type_C-b  Type_C-c         1.788235  2.659443        False
+57  Type_C-b  Type_D-a         0.733333  2.753612        False
+58  Type_C-b  Type_D-b        -1.657143  2.518817        False
+59  Type_C-b  Type_D-c         1.621053  2.582675        False
+60  Type_C-c  Type_D-a        -1.054902  2.855842        False
+61  Type_C-c  Type_D-b        -3.445378  2.630189         True
+62  Type_C-c  Type_D-c        -0.167183  2.691406        False
+63  Type_D-a  Type_D-b        -2.390476  2.725369        False
+64  Type_D-a  Type_D-c         0.887719  2.784494        False
+65  Type_D-b  Type_D-c         3.278195  2.552542         True
+######################## ANOVA Test for item_type ########################
+N-Way ANOVA Results for counts with item_type:
+                 sum_sq     df         F    PR(>F)
+item_type   1518.642857    3.0  1.103682  0.350954
+Residual   49535.214286  108.0       NaN       NaN
+
+No significant effects found. Skipping LSD post-hoc testing.
+
+
+############################################# Thetikoi - Decimal #############################################
+Count of each participant_id:
+  participant_id  count
+0           P001    688
+
+Count of each participant_id, condition pair:
+  participant_id item_type  count
+0           P001    Type_A    158
+1           P001    Type_B    119
+2           P001    Type_C    175
+3           P001    Type_D    236
+Mean count of occurrences per participant_id:
+688.0
+Mean count of occurrences per condition:
+item_type
+Type_A    158.0
+Type_B    119.0
+Type_C    175.0
+Type_D    236.0
+Name: count, dtype: float64
+Mean count of occurrences per condition category participant pair
+   item_type category  mean_count
+0     Type_A        a         8.0
+1     Type_A        b        30.0
+2     Type_A        c        11.0
+3     Type_B        a         5.0
+4     Type_B        b        15.0
+5     Type_B        c        17.0
+6     Type_C        a        12.0
+7     Type_C        b        28.0
+8     Type_C        c        17.0
+9     Type_D        a        17.0
+10    Type_D        b        47.0
+11    Type_D        c        23.0
+######################## ANOVA Test for item_type-category pairs ########################
+N-Way ANOVA Results for counts with item_type, category:
+                        sum_sq    df         F    PR(>F)
+item_type            54.228632   3.0  0.855866  0.475810
+category            242.666667   2.0  5.744849  0.008342
+item_type:category   50.444444   6.0  0.398071  0.873684
+Residual            570.250000  27.0       NaN       NaN
+
+Performing LSD post-hoc testing...
+
+LSD Pairwise Comparisons:
+     Group 1   Group 2  Mean Difference       LSD  Significant
+0   Type_A-a  Type_A-b        -7.333333  7.699218        False
+1   Type_A-a  Type_A-c        -1.000000  7.699218        False
+2   Type_A-a  Type_B-a         1.000000  7.699218        False
+3   Type_A-a  Type_B-b        -2.333333  7.699218        False
+4   Type_A-a  Type_B-c        -3.000000  7.699218        False
+5   Type_A-a  Type_C-a        -1.333333  7.699218        False
+6   Type_A-a  Type_C-b        -6.666667  7.699218        False
+7   Type_A-a  Type_C-c        -3.000000  7.699218        False
+8   Type_A-a  Type_D-a        -1.583333  7.201959        False
+9   Type_A-a  Type_D-b        -9.083333  7.201959         True
+10  Type_A-a  Type_D-c        -3.083333  7.201959        False
+11  Type_A-b  Type_A-c         6.333333  7.699218        False
+12  Type_A-b  Type_B-a         8.333333  7.699218         True
+13  Type_A-b  Type_B-b         5.000000  7.699218        False
+14  Type_A-b  Type_B-c         4.333333  7.699218        False
+15  Type_A-b  Type_C-a         6.000000  7.699218        False
+16  Type_A-b  Type_C-b         0.666667  7.699218        False
+17  Type_A-b  Type_C-c         4.333333  7.699218        False
+18  Type_A-b  Type_D-a         5.750000  7.201959        False
+19  Type_A-b  Type_D-b        -1.750000  7.201959        False
+20  Type_A-b  Type_D-c         4.250000  7.201959        False
+21  Type_A-c  Type_B-a         2.000000  7.699218        False
+22  Type_A-c  Type_B-b        -1.333333  7.699218        False
+23  Type_A-c  Type_B-c        -2.000000  7.699218        False
+24  Type_A-c  Type_C-a        -0.333333  7.699218        False
+25  Type_A-c  Type_C-b        -5.666667  7.699218        False
+26  Type_A-c  Type_C-c        -2.000000  7.699218        False
+27  Type_A-c  Type_D-a        -0.583333  7.201959        False
+28  Type_A-c  Type_D-b        -8.083333  7.201959         True
+29  Type_A-c  Type_D-c        -2.083333  7.201959        False
+30  Type_B-a  Type_B-b        -3.333333  7.699218        False
+31  Type_B-a  Type_B-c        -4.000000  7.699218        False
+32  Type_B-a  Type_C-a        -2.333333  7.699218        False
+33  Type_B-a  Type_C-b        -7.666667  7.699218        False
+34  Type_B-a  Type_C-c        -4.000000  7.699218        False
+35  Type_B-a  Type_D-a        -2.583333  7.201959        False
+36  Type_B-a  Type_D-b       -10.083333  7.201959         True
+37  Type_B-a  Type_D-c        -4.083333  7.201959        False
+38  Type_B-b  Type_B-c        -0.666667  7.699218        False
+39  Type_B-b  Type_C-a         1.000000  7.699218        False
+40  Type_B-b  Type_C-b        -4.333333  7.699218        False
+41  Type_B-b  Type_C-c        -0.666667  7.699218        False
+42  Type_B-b  Type_D-a         0.750000  7.201959        False
+43  Type_B-b  Type_D-b        -6.750000  7.201959        False
+44  Type_B-b  Type_D-c        -0.750000  7.201959        False
+45  Type_B-c  Type_C-a         1.666667  7.699218        False
+46  Type_B-c  Type_C-b        -3.666667  7.699218        False
+47  Type_B-c  Type_C-c         0.000000  7.699218        False
+48  Type_B-c  Type_D-a         1.416667  7.201959        False
+49  Type_B-c  Type_D-b        -6.083333  7.201959        False
+50  Type_B-c  Type_D-c        -0.083333  7.201959        False
+51  Type_C-a  Type_C-b        -5.333333  7.699218        False
+52  Type_C-a  Type_C-c        -1.666667  7.699218        False
+53  Type_C-a  Type_D-a        -0.250000  7.201959        False
+54  Type_C-a  Type_D-b        -7.750000  7.201959         True
+55  Type_C-a  Type_D-c        -1.750000  7.201959        False
+56  Type_C-b  Type_C-c         3.666667  7.699218        False
+57  Type_C-b  Type_D-a         5.083333  7.201959        False
+58  Type_C-b  Type_D-b        -2.416667  7.201959        False
+59  Type_C-b  Type_D-c         3.583333  7.201959        False
+60  Type_C-c  Type_D-a         1.416667  7.201959        False
+61  Type_C-c  Type_D-b        -6.083333  7.201959        False
+62  Type_C-c  Type_D-c        -0.083333  7.201959        False
+63  Type_D-a  Type_D-b        -7.500000  6.667718         True
+64  Type_D-a  Type_D-c        -1.500000  6.667718        False
+65  Type_D-b  Type_D-c         6.000000  6.667718        False
+######################## ANOVA Test for item_type ########################
+N-Way ANOVA Results for counts with item_type:
+                sum_sq   df         F    PR(>F)
+item_type   762.923077  3.0  0.526638  0.674943
+Residual   4346.000000  9.0       NaN       NaN
+
+No significant effects found. Skipping LSD post-hoc testing.
+
+
+############################################# Thetikoi - Small #############################################
+Count of each participant_id:
+  participant_id  count
+0           P001    682
+
+Count of each participant_id, condition pair:
+  participant_id item_type  count
+0           P001    Type_A    158
+1           P001    Type_B    207
+2           P001    Type_C    152
+3           P001    Type_D    165
+Mean count of occurrences per participant_id:
+682.0
+Mean count of occurrences per condition:
+item_type
+Type_A    158.0
+Type_B    207.0
+Type_C    152.0
+Type_D    165.0
+Name: count, dtype: float64
+Mean count of occurrences per condition category participant pair
+   item_type category  mean_count
+0     Type_A        a         9.0
+1     Type_A        b        30.0
+2     Type_A        c        15.0
+3     Type_B        a        10.0
+4     Type_B        b        46.0
+5     Type_B        c        16.0
+6     Type_C        a         4.0
+7     Type_C        b        24.0
+8     Type_C        c        15.0
+9     Type_D        a        12.0
+10    Type_D        b        36.0
+11    Type_D        c        15.0
+######################## ANOVA Test for item_type-category pairs ########################
+N-Way ANOVA Results for counts with item_type, category:
+                        sum_sq    df         F    PR(>F)
+item_type            55.677467   3.0  1.395594  0.262652
+category            259.293951   2.0  9.749075  0.000519
+item_type:category   30.056049   6.0  0.376688  0.888190
+Residual            412.250000  31.0       NaN       NaN
+
+Performing LSD post-hoc testing...
+
+LSD Pairwise Comparisons:
+     Group 1   Group 2  Mean Difference       LSD  Significant
+0   Type_A-a  Type_A-b        -5.250000  5.259096        False
+1   Type_A-a  Type_A-c        -2.750000  5.680472        False
+2   Type_A-a  Type_B-a        -1.083333  5.680472        False
+3   Type_A-a  Type_B-b        -9.250000  5.259096         True
+4   Type_A-a  Type_B-c        -3.083333  5.680472        False
+5   Type_A-a  Type_C-a         0.916667  5.680472        False
+6   Type_A-a  Type_C-b        -3.750000  5.259096        False
+7   Type_A-a  Type_C-c        -1.500000  5.259096        False
+8   Type_A-a  Type_D-a        -1.750000  5.680472        False
+9   Type_A-a  Type_D-b        -6.750000  5.259096         True
+10  Type_A-a  Type_D-c        -1.500000  5.259096        False
+11  Type_A-b  Type_A-c         2.500000  5.680472        False
+12  Type_A-b  Type_B-a         4.166667  5.680472        False
+13  Type_A-b  Type_B-b        -4.000000  5.259096        False
+14  Type_A-b  Type_B-c         2.166667  5.680472        False
+15  Type_A-b  Type_C-a         6.166667  5.680472         True
+16  Type_A-b  Type_C-b         1.500000  5.259096        False
+17  Type_A-b  Type_C-c         3.750000  5.259096        False
+18  Type_A-b  Type_D-a         3.500000  5.680472        False
+19  Type_A-b  Type_D-b        -1.500000  5.259096        False
+20  Type_A-b  Type_D-c         3.750000  5.259096        False
+21  Type_A-c  Type_B-a         1.666667  6.072680        False
+22  Type_A-c  Type_B-b        -6.500000  5.680472         True
+23  Type_A-c  Type_B-c        -0.333333  6.072680        False
+24  Type_A-c  Type_C-a         3.666667  6.072680        False
+25  Type_A-c  Type_C-b        -1.000000  5.680472        False
+26  Type_A-c  Type_C-c         1.250000  5.680472        False
+27  Type_A-c  Type_D-a         1.000000  6.072680        False
+28  Type_A-c  Type_D-b        -4.000000  5.680472        False
+29  Type_A-c  Type_D-c         1.250000  5.680472        False
+30  Type_B-a  Type_B-b        -8.166667  5.680472         True
+31  Type_B-a  Type_B-c        -2.000000  6.072680        False
+32  Type_B-a  Type_C-a         2.000000  6.072680        False
+33  Type_B-a  Type_C-b        -2.666667  5.680472        False
+34  Type_B-a  Type_C-c        -0.416667  5.680472        False
+35  Type_B-a  Type_D-a        -0.666667  6.072680        False
+36  Type_B-a  Type_D-b        -5.666667  5.680472        False
+37  Type_B-a  Type_D-c        -0.416667  5.680472        False
+38  Type_B-b  Type_B-c         6.166667  5.680472         True
+39  Type_B-b  Type_C-a        10.166667  5.680472         True
+40  Type_B-b  Type_C-b         5.500000  5.259096         True
+41  Type_B-b  Type_C-c         7.750000  5.259096         True
+42  Type_B-b  Type_D-a         7.500000  5.680472         True
+43  Type_B-b  Type_D-b         2.500000  5.259096        False
+44  Type_B-b  Type_D-c         7.750000  5.259096         True
+45  Type_B-c  Type_C-a         4.000000  6.072680        False
+46  Type_B-c  Type_C-b        -0.666667  5.680472        False
+47  Type_B-c  Type_C-c         1.583333  5.680472        False
+48  Type_B-c  Type_D-a         1.333333  6.072680        False
+49  Type_B-c  Type_D-b        -3.666667  5.680472        False
+50  Type_B-c  Type_D-c         1.583333  5.680472        False
+51  Type_C-a  Type_C-b        -4.666667  5.680472        False
+52  Type_C-a  Type_C-c        -2.416667  5.680472        False
+53  Type_C-a  Type_D-a        -2.666667  6.072680        False
+54  Type_C-a  Type_D-b        -7.666667  5.680472         True
+55  Type_C-a  Type_D-c        -2.416667  5.680472        False
+56  Type_C-b  Type_C-c         2.250000  5.259096        False
+57  Type_C-b  Type_D-a         2.000000  5.680472        False
+58  Type_C-b  Type_D-b        -3.000000  5.259096        False
+59  Type_C-b  Type_D-c         2.250000  5.259096        False
+60  Type_C-c  Type_D-a        -0.250000  5.680472        False
+61  Type_C-c  Type_D-b        -5.250000  5.259096        False
+62  Type_C-c  Type_D-c         0.000000  5.259096        False
+63  Type_D-a  Type_D-b        -5.000000  5.680472        False
+64  Type_D-a  Type_D-c         0.250000  5.680472        False
+65  Type_D-b  Type_D-c         5.250000  5.259096        False
+######################## ANOVA Test for item_type ########################
+N-Way ANOVA Results for counts with item_type:
+            sum_sq    df         F    PR(>F)
+item_type   465.25   3.0  0.589951  0.633247
+Residual   3154.50  12.0       NaN       NaN
+
+No significant effects found. Skipping LSD post-hoc testing.
